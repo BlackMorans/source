@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+</head>
+<script src="node_modules/systemjs/dist/system.js"></script>
+
+<body>
+    <script>
+       System.config({
+           "defaultJSExtension" : true
+       });
+       System.import("Customer.js").
+            then(function (exports) {
+                var cust = new exports.Customer();
+       });
+
+
+    </script>
+</body>
+</html>
